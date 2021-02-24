@@ -20,7 +20,7 @@ function isValidPassword(password){
 }
 
 function isValidEmail(email){
-  return email.indexOf("@codeimmersives.com") === email.length - 19;
+  return email.indexOf("@codeimmersives.com") === email.length - 19 && email.length > 19;
 }
 
 function isRegisteredUser(email){
@@ -28,7 +28,7 @@ function isRegisteredUser(email){
 }
 
 function passwordMatches(email, password){
-  return((email === user1 && password === password1) ||
+  return ((email === user1 && password === password1) ||
   (email === user2 && password === password2) ||
   (email === user3 && password === password3))
 }
